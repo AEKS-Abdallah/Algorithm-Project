@@ -10,21 +10,21 @@ def interval_scheduling(jobs):
     
     # Iterate through sorted jobs
     # We iterate through the sorted jobs using a for loop. At each iteration, we consider the current job
-for i in range(size):
+    for i in range(size):
         current_profit = sorted_jobs[i][2]
         print('c',current_profit)
         # Find the latest non-overlapping job
         
 # Abdelrahman Task
 
-        # We then search for the latest non-overlapping job by iterating backward through the previously processed jobs
-        # backword loop
-        for j in range(i - 1, -1, -1):
-            print(j)
-            if sorted_jobs[j][1] <= sorted_jobs[i][0]:
-                current_profit += max_profits[j]
-                print(max_profits[j])
-                break
+     # We then search for the latest non-overlapping job by iterating backward through the previously processed jobs
+     # backword loop
+    for j in range(i - 1, -1, -1):
+         print(j)
+         if sorted_jobs[j][1] <= sorted_jobs[i][0]:
+            current_profit += max_profits[j]
+             print(max_profits[j])
+             break
         # Store the maximum profit for the current job
         # it compare between the current_profit and the 
         max_profits[i] = max(current_profit, max_profits[i-1] if i > 0 else 0)
