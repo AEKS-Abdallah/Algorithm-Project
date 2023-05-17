@@ -9,3 +9,4 @@ def interval_scheduling(jobs):
     return max_profit , schedule
 jobs = [(1, 6, 6), (2, 5, 5),(5, 7, 5), (6, 8, 3)]
 interval_scheduling(jobs)
+
