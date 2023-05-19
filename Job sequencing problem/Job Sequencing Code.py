@@ -1,4 +1,5 @@
-#Abdallah Code
+# TEAM 11
+# Abdallah Code
 
 def JobSequencing(arr):
     
